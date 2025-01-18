@@ -179,7 +179,15 @@ void TextControllerCreateAfter(std::tuple<CInstance*, CInstance*, CCode*, int, R
 							}
 							if (mapping[1] == '[' && mapping[mapping.size() - 2] == ']')
 							{
-								hasInnerArray = true;
+                                // Check if the mapping string matches a specific pattern indicating an inner array
+                                // The pattern being checked is "[c_.../color"
+                                // If the pattern matches, it prints a message and ignores this mapping for inner array checking
+                                if (mapping[2] == 'c' && mapping[3] == '_' && mapping[mapping.size() - 3] == 'r' && mapping[mapping.size() - 4] == 'o' && mapping[mapping.size() - 5] == 'l' && mapping[mapping.size() - 6] == 'o' && mapping[mapping.size() - 7] == 'c' && mapping[mapping.size() - 8] == '/' && mapping[mapping.size() - 9] == '[') {
+                                   printf("Ignoring %s for hasInnerArray checking\n", mapping.c_str());
+                                }
+								else {
+									hasInnerArray = true;
+								}
 							}
 							mapping = mapping.substr(1, mapping.size() - 2);
 						}
