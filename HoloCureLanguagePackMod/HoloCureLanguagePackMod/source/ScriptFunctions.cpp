@@ -1,10 +1,11 @@
-#include "ScriptFunctions.h"
+﻿#include "ScriptFunctions.h"
 #include <YYToolkit/shared.hpp>
 #include <CallbackManager/CallbackManagerInterface.h>
 #include "ModuleMain.h"
 #include "CodeEvents.h"
 #include <regex>
 #include <fstream>
+#include "BuiltInFunctions.h"
 
 extern std::vector<std::unordered_map<std::string, std::string>> languageTextSwapMap;
 
@@ -155,7 +156,7 @@ void drawWrappingText(double& curTextXOffset, double& curTextYOffset, std::strin
 		{
 			int mid = (high + low) / 2;
 			numCharDrawn = mid;
-			double curDrawnTextSize = g_ModuleInterface->CallBuiltin("string_width", { drawStr.substr(0, numCharDrawn) }).m_Real;
+			double curDrawnTextSize = g_ModuleInterface->CallBuiltin("string_width", { safe_substr(drawStr, 0, numCharDrawn) }).m_Real;
 			if (curTextXOffset + curDrawnTextSize > sizeOfLineWrap)
 			{
 				high = mid - 1;
@@ -165,8 +166,8 @@ void drawWrappingText(double& curTextXOffset, double& curTextYOffset, std::strin
 				low = mid + 1;
 			}
 		}
-		g_ModuleInterface->CallBuiltin("draw_text", { textStartXPos + curTextXOffset, textStartYPos + curTextYOffset, drawStr.substr(0, numCharDrawn) });
-		drawStr = drawStr.substr(numCharDrawn);
+		g_ModuleInterface->CallBuiltin("draw_text", { textStartXPos + curTextXOffset, textStartYPos + curTextYOffset, safe_substr(drawStr, 0, numCharDrawn) });
+		drawStr = safe_substr(drawStr, numCharDrawn);
 		curTextXOffset = 0;
 		curTextYOffset += 10;
 		drawnTextSize = g_ModuleInterface->CallBuiltin("string_width", { drawStr }).m_Real;
