@@ -20,6 +20,7 @@ int objTextControllerIndex = -1;
 int jpFont = -1;
 
 std::ofstream outFile;
+bool isDebug = false;
 
 EXPORTED AurieStatus ModuleInitialize(
 	IN AurieModule* Module,

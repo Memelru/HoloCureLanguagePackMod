@@ -5,6 +5,7 @@
 #include "ScriptFunctions.h"
 #include "CodeEvents.h"
 
+extern bool isDebug;
 extern std::vector<std::unordered_map<std::string, std::string>> languageTextSwapMap;
 
 // 한글 텍스트를 다루는데 문제가 생기는 것을 방지하기 위해 안전하게 문자열을 자르는 함수
@@ -72,6 +73,10 @@ void DrawTextBefore(RValue* Result, CInstance* Self, CInstance* Other, int numAr
 {
 	if (curLanguagePackFont != -1)
 	{
+		if (isDebug) {
+			std::string text = std::string(Args[2].AsString());
+			g_ModuleInterface->Print(CM_WHITE, "Text: %s", text.c_str());
+		}
 		RValue curFont = languageFontList[curLanguagePackFont];
 		getTextSwapMapping(Args);
 		if (curFont.m_Kind == VALUE_UNDEFINED)

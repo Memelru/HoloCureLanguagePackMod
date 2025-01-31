@@ -16,3 +16,4 @@ extern PFUNC_YYGMLScript origFoodRecipesScript;
 
 extern int objTextControllerIndex;
 extern int jpFont;
+extern bool isDebug;

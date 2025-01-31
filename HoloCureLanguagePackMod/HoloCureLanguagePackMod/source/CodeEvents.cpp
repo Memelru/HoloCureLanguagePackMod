@@ -6,6 +6,7 @@
 #include <regex>
 
 extern int curLanguagePackFont;
+extern bool isDebug;
 
 std::vector<std::string> languageNamesList;
 std::vector<RValue> languageFontList;
@@ -412,6 +413,11 @@ void TextControllerCreateAfter(std::tuple<CInstance*, CInstance*, CCode*, int, R
 		}
 		outFile << "}\n";
 		outFile.close();
+	}
+
+	if (std::filesystem::exists("LanguagePacks/debugmode")) {
+		isDebug = true;
+		g_ModuleInterface->Print(CM_YELLOW, "Debug mode enabled");
 	}
 }
 
