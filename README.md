@@ -21,7 +21,7 @@ A. `AurieManager.exe`에서 `Play Game`으로 실행하지는 않았는지 확�
 ### Q. `YYToolkit Log` 창이 한번 뜨고 다시 꺼졌다가 켜졌어요. (그 다음에는 정상실행)
 A. 홀로큐어가 Steam 버전이고, 홀로큐어 실행파일을 직접 열었을때 생기는 증상으로, 정상입니다. 게임에서 Steam으로 실행되지 않았다고 판단되면 자동으로 Steam에서 재실행되는 코드가 있기 때문입니다.</br></br>
 ### Q. 위에 해당되는 `YYToolkit Log` 관련 증상이 없고, 그냥 cmd창만 뜨고 아무 반응없이 꺼져요.
-A. 다음 URL에서 최신버전의 Visual C++ 재배포 가능 패키지(X64 아키텍쳐 전용)를 설치해주세요. https://learn.microsoft.com/ko-kr/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version </br></br>
+A. 다음 URL에서 최신버전의 Visual C++ 재배포 가능 패키지(X64 아키텍처)를 설치해주세요. https://learn.microsoft.com/ko-kr/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version </br></br>
 ### Q. Steam에서 실행 파일 누락이라는 오류가 떠요. (무결성검사, 게임 재설치를 해도 똑같아요)
 A. 실행과정 중 `AurieLoader.exe`를 찾지 못하면 홀로큐어가 실행을 실패하여 내뿜는 오류입니다. 일반적으로 컴퓨터의 백신 프로그램이 `AurieLoader.exe`를 바이러스로 판단하고, 파일을 지우거나, 차단해서 생길 수 있습니다. 아래의 예시로 차단된 `AurieLoader.exe`를 허용 및 복구해주세요.</br></br>
 예시) Windows 보안 -> 보호 기록 -> `위협 차단됨` 항목 눌러서 확인하기 -> `AurieLoader.exe`가 차단되었는지 확인 -> 작업 메뉴에서 허용해주기 -> 모드 재설치</br>
