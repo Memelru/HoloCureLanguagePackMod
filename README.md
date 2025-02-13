@@ -17,8 +17,7 @@ A. 인증서로 인증되지 않았기 때문에 생기는 문제입니다. 프�
 바이러스 감지 이후 해당 파일을 예외로 추가하거나 허용하지 않으면 올바르게 진행되지 않습니다.</br>
 
 추가 백신 프로그램을 사용하고 있지 않고, Windows 보안(Windows Defender)를 사용중이라면 아래 방법으로 해결해주세요.</br>
-- (Windows 11 기준) Windows 보안 -> 보호 기록 -> `위협 차단됨` 항목 눌러서 확인하기 -> `AurieLoader.exe`가 차단되었는지 확인 -> 작업 메뉴에서 허용해주기 -> 모드 재설치</br>
-</br></br>
+- (Windows 11 기준) Windows 보안 -> 보호 기록 -> `위협 차단됨` 항목 눌러서 확인하기 -> `AurieLoader.exe`가 차단되었는지 확인 -> 작업 메뉴에서 허용해주기 -> 모드 재설치</br></br>
 ### Q. `YYToolkit Log` 라는 창이 열렸는데 홀로큐어가 안켜져요.
 A. 홀로큐어에 모드를 적용하기 위해 필요한 작업을 진행하는 중입니다. 조금만 더 기다려주세요...</br></br>
 ### Q. `YYToolkit Log` 창에서 기다렸는데 그냥 창만 꺼져요.
@@ -28,10 +27,12 @@ A. 홀로큐어가 Steam 버전이고, 홀로큐어 실행파일을 직접 열�
 ### Q. 위에 해당되는 `YYToolkit Log` 관련 증상이 없고, 그냥 cmd창만 뜨고 아무 반응없이 꺼져요.
 A. 다음 URL에서 최신버전의 Visual C++ 재배포 가능 패키지(**X64 아키텍처**)를 설치해주세요. https://learn.microsoft.com/ko-kr/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version </br></br>
 ### Q. Steam에서 실행 파일 누락이라는 오류가 떠요. (무결성검사, 게임 재설치를 해도 똑같아요)
-A. 실행과정 중 `AurieLoader.exe`를 찾지 못하면 홀로큐어가 실행을 실패하여 내뿜는 오류입니다. 일반적으로 컴퓨터의 백신 프로그램이 `AurieLoader.exe`를 바이러스로 판단하고, 파일을 지우거나, 차단해서 생길 수 있습니다. 아래의 예시로 차단된 `AurieLoader.exe`를 허용 및 복구해주세요.</br></br>
-예시) Windows 보안 -> 보호 기록 -> `위협 차단됨` 항목 눌러서 확인하기 -> `AurieLoader.exe`가 차단되었는지 확인 -> 작업 메뉴에서 허용해주기 -> 모드 재설치</br>
-- `AurieLoader.exe`는 `홀로큐어 설치폴더`->`mods` 폴더에 위치해야합니다.</br>
-- **재설치 이후 `AurieLoader.exe`가 `mods` 폴더에 없으면 https://github.com/AurieFramework/Aurie/releases 에서 최신버전의 `AurieLoader.exe`를 다운로드하고 해당 위치로 옮겨주세요.**</br></br>
+A. 실행과정 중 `AurieLoader.exe`를 찾지 못하면 홀로큐어가 실행을 실패하여 내뿜는 오류입니다. 일반적으로 컴퓨터의 백신 프로그램이 `AurieLoader.exe`를 바이러스로 판단하고, 파일을 지우거나, 차단해서 생길 수 있습니다.</br>
+백신으로 인해 차단된 `AurieLoader.exe`를 허용 및 복구해주세요.</br>
+- (Windows 11 기준) Windows 보안 -> 보호 기록 -> `위협 차단됨` 항목 눌러서 확인하기 -> `AurieLoader.exe`가 차단되었는지 확인 -> 작업 메뉴에서 허용해주기 -> 모드 재설치</br>
+
+**`AurieLoader.exe`는 `홀로큐어 설치폴더`->`mods` 폴더에 위치해야합니다.**</br></br>
+**재설치 이후 `AurieLoader.exe`가 `mods` 폴더에 없으면 https://github.com/AurieFramework/Aurie/releases 에서 최신버전의 `AurieLoader.exe`를 다운로드하고 해당 위치로 옮겨주세요.**</br></br>
 ### Q. Steam에서 홀로큐어를 제거할 수 없어요.
 A. `AurieManager.exe`에서 홀로큐어 실행파일을 추가/선택하고 `Uninstall Aurie` 버튼을 눌러 완전히 제거해주세요. 그 다음, 게임 제거를 다시 시도해주세요.</br></br>
 
