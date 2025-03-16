@@ -1,13 +1,16 @@
 # 홀로큐어 언어팩 모드
-홀로큐어에서 언어팩을 사용할 수 있게 만들어주는 모드입니다. 또한 모든 언어를 지원하기 위해 .ttf 파일을 사용할 수 있습니다.
+홀로큐어에서 언어팩을 사용할 수 있게 만들어주는 모드입니다. 또한 .ttf 파일을 사용하여 폰트를 교체할 수 있습니다.
 ## 설치 방법
 1. 최신버전의 `HoloCureLanguagePackMod.dll` 파일과 `CallbackManagerMod.dll` 파일을 https://github.com/Memelru/HoloCureLanguagePackMod/releases 에서 다운로드합니다.</br></br>
 2. 최신버전의 `AurieManager.exe` 파일을 https://github.com/AurieFramework/Aurie/releases 에서 다운로드합니다.
     - 참고: `AurieManager.exe` 파일이 바이러스 백신에 의해 트로이 목마로 감지될 수 있습니다. YYToolkit은 오픈소스이며, 여러 모딩 커뮤니티에서 문제 없이 사용되고 있습니다.</br></br>
-3. `AurieManager.exe` 를 실행하고, 우측 상단에 `Add Game`을 클릭하여 `HoloCure.exe` 파일을 선택해주세요.
+3. 버전 3.4.4의 `YYToolkit.dll` 파일을 https://github.com/AurieFramework/YYToolkit/releases/download/v3.4.4/YYToolkit.dll 에서 다운로드합니다.</br></br>
+4. `AurieManager.exe` 를 실행하고, 우측 상단에 `Add Game`을 클릭하여 `HoloCure.exe` 파일을 선택해주세요.
     - `HoloCure.exe` 파일은 Steam에서 `라이브러리` - `HoloCure 우클릭` - `로컬 파일 탐색` 메뉴를 클릭해서 찾을 수 있습니다.</br></br>
-4. `CallbackManagerMod.dll` 파일과 `HoloCureLanguagePackMod.dll` 파일을 복사하여, 홀로큐어 설치 폴더의 `mods/Aurie` 폴더에 붙여 넣어주세요.</br></br>
-5. 게임 폴더에서 `HoloCure.exe` 파일을 열거나, Steam에서 홀로큐어를 실행하는 방법으로 모드와 함께 게임을 실행할 수 있습니다.
+5. `Install Aurie` 버튼을 클릭하여 중요한 구성요소들을 설치해주세요.</br></br>
+6. `CallbackManagerMod.dll` 파일과 `HoloCureLanguagePackMod.dll` 파일을 복사하여, 홀로큐어 설치 폴더의 `mods/Aurie` 폴더에 붙여 넣어주세요.</br></br>
+7. **3번째 단계에서 다운로드받은 `YYToolkit.dll` 파일을 `mods/Aurie` 폴더에 덮어 씌워주세요**</br></br>
+8. 게임 폴더에서 `HoloCure.exe` 파일을 열거나, Steam에서 홀로큐어를 실행하는 방법으로 모드와 함께 게임을 실행할 수 있습니다.
     - **주의: `AurieManager.exe` 프로그램의 `Play Game`으로 홀로큐어를 실행하면 올바르게 켜지지 않을 수 있습니다.**
     - **주의: `AurieManager.exe` 프로그램의 `Play Game`으로 홀로큐어를 실행하면 올바르게 켜지지 않을 수 있습니다.**</br></br>
 
